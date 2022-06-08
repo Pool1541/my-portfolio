@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+:root {
+  --paragraph-family : "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --text-family: 'Roboto', sans-serif;
+  --primary-color: rgb(73, 73, 80);
+  --secundary-color : rgba(73, 73, 80, 0.678);
+  --paragraph-color : rgb(164, 0, 205);
+}
+
+.section__introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 30;
+}
+
+.section__container {
+  max-width: 1000px;
+}
+
+.section__introduction__textTop {
+  font-size: .9rem;
+  color: #3ecc8f;
+  font-weight: 600;
+  font-family: var(--paragraph-family);
+  /* margin: 0 0 10px 4px; */
+}
+
+.section__introduction__textMid {
+  font-family: var(--text-family);
+  font-size: var(--size-title);
+  letter-spacing: -2px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--lightest-slate);
+}
+
+.section__introduction__textMid--secundary {
+  color: var(--ligh-slate);
+}
+
+.section__introduction__textBottom {
+  color: var(--ligh-slate);
+  font-weight: 400;
+  width: 60%;
+  font-size: var(--size-paragraph);
+  /* margin: 15px 0 0 4px; */
+}
+
+.section__introduction__textBottom span {
+  font-weight: bold;
+  color: #3ecc8f;
+}

@@ -1,0 +1,47 @@
+:root {
+  --header : rgb(211, 205, 215);
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  height: 70px;
+  padding: 0 50px;
+  background-color: transparent, var(--header);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.288);
+  z-index: 100;
+}
+
+
+.header__navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* outline: 1px solid red; */
+}
+
+/* header title */
+
+.header__navbar__title {
+  margin-left: 50px;
+  flex: 1;
+  color: var(--lightest-slate);
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.288);
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.header__navbar__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex: 1;
+}

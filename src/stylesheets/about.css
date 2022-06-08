@@ -1,0 +1,128 @@
+.section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 20px 150px;
+}
+
+.wave {
+  position: absolute;
+  z-index: -1;
+  top: calc(-20vw);
+  left: 0;
+}
+
+.sectionAbout {
+  height: auto;
+  z-index: 20;
+  background: rgb(30,96,145);
+  background: -moz-linear-gradient(0deg, rgba(30,96,145,1) 0%, rgba(26,117,159,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(30,96,145,1) 0%, rgba(26,117,159,1) 100%);
+  background: linear-gradient(0deg, rgba(30,96,145,1) 0%, rgba(26,117,159,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e6091",endColorstr="#1a759f",GradientType=1);
+}
+
+/* center */
+
+.sectionAbout__center {
+  margin-top: 80px !important;
+  width: 70%;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+/* Title */
+
+.sectionAbout__tittleContainer {
+  padding: 30px 0px;
+}
+
+.sectionAbout__title {
+  position: relative;
+  font-size: clamp(20px, 8vw, 30px);
+  color: var(--lightest-slate);
+}
+
+/* .sectionAbout__title::after {
+  content: "";
+  width: 31%;
+  height: 1px;
+  background-color: #3ecc8f;
+  position: absolute;
+  bottom: 50%;
+  margin-left: 20px;
+} */
+
+.sectionAbout__container {
+  width: 100%;
+  height: 50%;
+  /* margin: 0 auto; */
+  /* margin-left: clamp(10px,12vw, 200px); */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 50px;
+}
+
+/*  */
+
+
+.sectionAbout__paragraphContainer {
+  position: relative;
+  max-width: clamp(230px, 60vw, 100%);
+}
+
+.sectionAbout__paragraphContainer::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: -54px;
+  left: 162px;
+}
+
+/*  */
+
+/* Image */
+
+.sectionAbout__imageContainer {
+  width: clamp(200px,60vw, 400px);
+  justify-self: center;
+}
+
+.sectionAbout__imageContainer img {
+  width: 100%;
+}
+
+/* Paragraph and skills */
+
+.sectionAbout__paragraph {
+  color: var(--ligh-slate);
+}
+
+.sectionAbout__listSkills {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.sectionAbout__skill {
+  position: relative;
+  padding: 0 0 0 20px;
+  color: var(--ligh-slate);
+}
+
+.sectionAbout__skill::before {
+  content: "▹";
+  color: #3ecc8f;
+  position: absolute;
+  left: 0;
+}
+
+
+@media (max-width: 1331px) {
+  .sectionAbout__title::after {
+    width: 70%;
+  }
+}

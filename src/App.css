@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --background : rgb(221, 242, 235);
+  --yale-blue : #184E77;
+  --lapi-lazuli : #1E6091;
+  --gc-blue : #1A759F;
+  --blue-munsell : #168AAD;
+  --viridian-green : #34A0A4;
+  --keppel : #52B69A;
+  --ocean-green : #76C893;
+  --granny-smith-apple : #99D98C;
+  --yellow-green : #B5E48C;
+  --yellow-creen-crayola : #D9ED92;
+  --pastel-green : #3ecc8f;
+  /* fonts */
+  --slate : #889bb0;
+  --ligh-slate :  #a8bdd1;
+  --lightest-slate : #d9e8f3;
+  /* sizes */
+  --size-title: clamp(25px, 8vw, 4.6rem);
+  --size-paragraph: clamp(14px, 2vw, 18px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3::selection, p::selection, button::selection, span::selection, li::selection, img::selection {
+  background-color: rgb(195, 240, 225);
+  color: rgb(63, 185, 185);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
+li {
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  background-color: var(--yale-blue);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
-.App-link {
-  color: #61dafb;
+
+.mainContainer {
+  width: 100%;
+  max-width: 2400px;
+  min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  padding: 0 150px;
 }
