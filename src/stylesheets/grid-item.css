@@ -199,3 +199,12 @@
     padding: 0;
   }
 }
+
+
+/* Orientación horizonta */
+
+@media (max-height:500px) {
+  .section__introduction {
+    height: 700px;
+  }
+}
