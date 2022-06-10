@@ -168,10 +168,6 @@
   .header {
     padding: 0;
   }
-  
-  .sectionAbout__center {
-    margin: 0 0 !important;
-  }
 
   .sectionAbout__imageContainer {
     justify-self: flex-start !important;
@@ -181,16 +177,25 @@
 
 @media (max-width: 570px ) {
   .section {
-    padding: 20px 50px !important;
+    padding: 20px 0px !important;
+  }
+  .sectionAbout__center {
+    width: 80% !important;
+    padding-left: 40px;
   }
 }
 
 
 @media (max-width: 415px) {
   .sectionAbout__paragraphContainer::after {
-    max-width: 80px;
+    display: none;
   }
   .card {
     min-width: 280px;
+  }
+
+  .sectionAbout__center {
+    width: 60% !important;
+    padding: 0;
   }
 }
