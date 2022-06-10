@@ -15,28 +15,28 @@ const Work = () => {
         <GridItem titleGitHub={ 'Github Link' }
           titleExternal={ 'External Link' }
           image={'imagen1.webp'}
-          nameImg={'imagen de la página'}
+          nameImg={`Pokeapi`}
           githubLink={'https://github.com/Pool1541/pokeapi'}
           externalLink={'https://pool1541.github.io/pokeapi/'}
            />
         <GridItem titleGitHub={ 'Github Link' }
           titleExternal={ 'External Link' }
-          image={'imagen3.PNG'}
-          nameImg={'imagen de la página'}
+          image={'imagen3.webp'}
+          nameImg={'Aplicación de Tareas'}
           githubLink={'https://github.com/Pool1541/aplicacionDeTareas'}
           externalLink={'https://pool1541.github.io/aplicacionDeTareas/'}
            />
         <GridItem titleGitHub={ 'Github Link' }
           titleExternal={ 'External Link' }
-          image={'imagen4.PNG'}
-          nameImg={'imagen de la página'}
+          image={'imagen4.webp'}
+          nameImg={'Calculadora'}
           githubLink={'https://github.com/Pool1541/calculadoraReact'}
           externalLink={'https://pool1541.github.io/calculadoraReact/'}
            />
         <GridItem titleGitHub={ 'Github Link' }
           titleExternal={ 'External Link' }
-          image={'imagen5.PNG'}
-          nameImg={'imagen de la página'}
+          image={'imagen5.webp'}
+          nameImg={'Food Go'}
           githubLink = {'https://github.com/Pool1541/foodgo'}
           externalLink= {'https://pool1541.github.io/foodgo/'}
            />

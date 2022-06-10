@@ -43,7 +43,7 @@ const About = () => {
             </div>
           </div>
           <div className="sectionAbout__imageContainer">
-            <img src={require('../images/Aboutme.png')} alt="" />
+            <img src={require('../images/Aboutme.png')} alt="imagen de desarrollador web animado" />
           </div>
         </div>
       </div>

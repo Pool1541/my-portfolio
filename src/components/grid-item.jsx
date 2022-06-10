@@ -8,7 +8,7 @@ const GridItem = ({ titleGitHub, titleExternal, nameImg, image, githubLink, exte
 
   return (
     <div className='card'>
-      <img src={require(`../images/${image}`)} alt={ nameImg } className='card__image' />
+      <img src={require(`../images/${image}`)} alt={`Imagen del proyecto ${nameImg}`} className='card__image' />
       <div className="card__content">
         <h3 className="card__title">Title of card</h3>
         <p className="card__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur esse laudantium laborum! Accusamus, debitis! Dignissimos quos odio repellendus corrupti veritatis?</p>
