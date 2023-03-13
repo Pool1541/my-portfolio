@@ -93,7 +93,7 @@ export default function GridItem({ data }) {
     <a href={demoUrl} target="_blank" rel="noreferrer">
       <StyledItem>
         <img src={imageUrl} alt="title" />
-        <a href={GithubUrl} target="_blank" rel="noreferrer">
+        <a href={GithubUrl} target="_blank" rel="noreferrer" title={title}>
           <AiFillGithub />
         </a>
         <div>
