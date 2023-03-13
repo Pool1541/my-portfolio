@@ -24,10 +24,10 @@
     },
     "modes": {
       "bubble": {
-        "distance": 250,
+        "distance": 200,
         "duration": 2,
-        "opacity": 0,
-        "size": 0,
+        "opacity": 1,
+        "size": 1,
         "divs": {
           "distance": 200,
           "duration": 0.4,
@@ -60,7 +60,7 @@
       "color": {
         "value": "#ffffff"
       },
-      "distance": 150,
+      "distance": 0,
       "opacity": 0.4
     },
     "move": {
@@ -78,7 +78,7 @@
         "top": "out"
       },
       "random": true,
-      "speed": 1
+      "speed": 0.3
     },
     "number": {
       "density": {
