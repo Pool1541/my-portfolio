@@ -34,7 +34,7 @@ const StyledButton = styled.button`
 
 export default function BurgerBtn({ isActive, handleClick }) {
   return (
-    <StyledButton isActive={isActive} onClick={handleClick}>
+    <StyledButton isActive={isActive} onClick={handleClick} title="menu">
       <div></div>
       <div></div>
       <div></div>

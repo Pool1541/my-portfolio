@@ -70,7 +70,7 @@ export default function About() {
     <StyledSection id="about">
       <Container>
         <div className="imageContainer">
-          <img src={require("../../assets/images/me.png")} alt="me" />
+          <img src={require("../../assets/images/me.webp")} alt="me" />
         </div>
         <div className="textContainer">
           <h2>{lang.navBar.about}</h2>
