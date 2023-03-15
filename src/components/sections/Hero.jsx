@@ -1,5 +1,7 @@
+import { useEffect, useRef } from "react";
 import styled from "styled-components";
 import useLang from "../../hooks/useLang";
+import ScrollReveal from "scrollreveal";
 
 const StyledHero = styled.section`
   width: 70%;
@@ -8,6 +10,10 @@ const StyledHero = styled.section`
   padding: 100px 0;
   display: flex;
   align-items: center;
+
+  .reveal {
+    opacity: 1;
+  }
 
   @media screen and (max-width: 425px) {
     width: 85%;
@@ -20,12 +26,14 @@ const StyledHero = styled.section`
       font-size: clamp(2.5rem, 8vw, 4.8rem);
       font-weight: 600;
       color: var(--white);
+      visibility: hidden;
     }
 
     h2 {
       font-size: clamp(2.5rem, 8vw, 4.8rem);
       font-weight: 600;
       line-height: 0.9;
+      visibility: hidden;
     }
 
     h3 {
@@ -34,6 +42,7 @@ const StyledHero = styled.section`
       max-width: 60%;
       margin-top: 10px;
       line-height: 1.3;
+      visibility: hidden;
 
       @media screen and (max-width: 768px) {
         max-width: 80%;
@@ -47,6 +56,7 @@ const StyledHero = styled.section`
       line-height: 1.5;
       color: var(--aquamarine);
       font-size: clamp(0.9rem, 2vw, 1rem);
+      visibility: hidden;
     }
 
     a {
@@ -58,6 +68,7 @@ const StyledHero = styled.section`
       padding: 13px 25px 10px;
       transition: all 0.2s ease;
       cursor: pointer;
+      visibility: hidden;
     }
 
     a:hover {
@@ -68,9 +79,26 @@ const StyledHero = styled.section`
 
 export default function Hero() {
   const { lang } = useLang();
+  const divRef = useRef();
+
+  useEffect(() => {
+    const nodeArray = [divRef.current.childNodes];
+
+    ScrollReveal().reveal(nodeArray[0], {
+      duration: 1000,
+      delay: 6500,
+      distance: "30px",
+      opacity: 0,
+      easing: "ease-out",
+      origin: "bottom",
+      interval: 100,
+      // beforeReveal: (e) => e.classList.add("reveal"),
+    });
+  }, []);
+
   return (
     <StyledHero id="top">
-      <div>
+      <div ref={divRef}>
         <p>{lang.greeting}</p>
         <h1>{lang.fullname}</h1>
         <h2>{lang.whatIDo}</h2>

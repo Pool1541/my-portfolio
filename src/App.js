@@ -1,13 +1,23 @@
-import Footer from "./components/layout/Footer";
-import Header from "./components/layout/Header";
-import Main from "./components/layout/Main";
+import { lazy, useState } from "react";
+import { Suspense } from "react";
+
+import Loader from "./assets/icons/Loader";
 
 function App() {
+  const Home = lazy(() => import("./components/pages/Home"));
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      setTimeout(() => {}, 500);
+    }, 5500);
+  });
+
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Footer />
+      <Loader />
+      <Suspense fallback={null}>
+        <Home />
+      </Suspense>
     </div>
   );
 }

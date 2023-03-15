@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function useScroll() {
-  const [scroll, setScroll] = useState(40);
+  const [scroll, setScroll] = useState(0);
   const header = document.querySelector("#header");
 
   function onScroll() {

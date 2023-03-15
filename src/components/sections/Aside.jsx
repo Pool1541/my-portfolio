@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { useEffect, useRef } from "react";
+import ScrollReveal from "scrollreveal";
 
 const StyledAside = styled.aside`
   width: 60px;
@@ -10,6 +12,7 @@ const StyledAside = styled.aside`
   top: calc(50vh - 100px);
   left: 0;
   z-index: 100;
+  visibility: hidden;
 
   @media screen and (max-width: 1120px) {
     display: none;
@@ -45,8 +48,22 @@ const StyledAside = styled.aside`
 `;
 
 export default function Aside() {
+  const ref = useRef();
+  useEffect(() => {
+    const nodeArray = [ref.current, ...ref.current.querySelectorAll("li")];
+
+    ScrollReveal().reveal(nodeArray, {
+      duration: 1000,
+      delay: 7000,
+      distance: "100px",
+      easing: "ease-out",
+      origin: "left",
+      interval: 100,
+    });
+  }, []);
+
   return (
-    <StyledAside>
+    <StyledAside ref={ref}>
       <ul>
         <li>
           <a
