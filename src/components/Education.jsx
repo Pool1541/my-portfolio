@@ -52,6 +52,7 @@ export default function Education() {
             <img
               src={require("../assets/images/cibertec.webp")}
               alt="Cibertec"
+              loading="lazy"
             />
             <p>{lang.education.cibertec}</p>
           </li>
@@ -61,6 +62,7 @@ export default function Education() {
             <img
               src={require("../assets/images/alura.webp")}
               alt="Alura latam"
+              loading="lazy"
             />
             <p>{lang.education.alura}</p>
           </li>
@@ -74,6 +76,7 @@ export default function Education() {
             <img
               src={require("../assets/images/freecodecamp.webp")}
               alt="FreeCodeCamp"
+              loading="lazy"
             />
             <p>{lang.education.freecodecamp}</p>
           </li>

@@ -10,7 +10,7 @@ const StyledButton = styled.button`
   }
 
   div {
-    width: 35px;
+    width: 30px;
     height: 2px;
     opacity: 1;
     background-color: var(--aquamarine);

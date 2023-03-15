@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import useLang from "../../hooks/useLang";
 import useScroll from "../../hooks/useScroll";
 import BurgerBtn from "..//BurgerBtn";
+import ScrollReveal from "scrollreveal";
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -19,6 +20,10 @@ const StyledHeader = styled.header`
 
   &.hidden {
     transform: translateY(-70px);
+  }
+
+  @media screen and (max-width: 660px) {
+    padding: 0 20px;
   }
 
   > div {
@@ -57,6 +62,7 @@ const StyledHeader = styled.header`
         white-space: nowrap;
         font-size: 1.2rem;
         font-weight: 500;
+        visibility: hidden;
 
         a {
           display: flex;
@@ -81,6 +87,7 @@ const NavLink = styled.p`
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
   const { scroll } = useScroll();
+  const ref = useRef();
 
   const {
     lang: { navBar },
@@ -90,12 +97,23 @@ export default function Header() {
     setIsActive(!isActive);
   }
 
+  useEffect(() => {
+    ScrollReveal().reveal(ref.current.querySelectorAll("li"), {
+      duration: 1000,
+      delay: 6000,
+      distance: "50px",
+      easing: "ease-out",
+      origin: "bottom",
+      interval: 100,
+    });
+  }, []);
+
   return (
     <StyledHeader isActive={isActive} id="header" scroll={scroll}>
       <div>
         <div>Logo</div>
         <nav>
-          <ul>
+          <ul ref={ref}>
             <li>
               <a href="#top" onClick={handleClick}>
                 <NavLink>{navBar.home}</NavLink>

@@ -61,12 +61,16 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--oxford-blue);
     color: var(--slate-gray);
     font-size: 18px;
-    font-family: "Calibre", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Calibre", sans-serif;
     scroll-behavior: smooth;
 
     @media screen and (max-width: 760px) {
       font-size: 16px;
     }
+  }
+
+  body {
+    overflow: hidden;
   }
 
   h1::selection,
@@ -106,6 +110,47 @@ const GlobalStyle = createGlobalStyle`
   li {
     list-style: none;
   }
+
+
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    }
+  &::-webkit-scrollbar:vertical {
+    width: 7px;
+    }
+  &::-webkit-scrollbar-button:increment {
+    display: none;
+    }
+  &::-webkit-scrollbar:horizontal {
+    height: 10px;
+    }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--oxford-blue);
+    border-radius: 20px;
+    border: 2px solid #ffffff6e;
+    }
+  &::-webkit-scrollbar-track {
+    background-color: var(--oxford-blue);
+    border-radius: 0px;
+    }
+
+
+
+
+/* 
+  .scroll {
+
+    &::-webkit-scrollbar-track {
+      background-color: var(--oxford-blue);
+    }
+
+    &::-webkit-scrollbar-thumb {
+    background-color: var(--oxford-blue);
+    border: 2px solid #ffffff6e;
+  }
+
+  } */
 
 
 `;
