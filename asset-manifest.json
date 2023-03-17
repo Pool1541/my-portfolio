@@ -1,20 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.f8b84835.css",
-    "main.js": "/static/js/main.a3041d9b.js",
-    "static/js/937.bc63fe91.chunk.js": "/static/js/937.bc63fe91.chunk.js",
-    "static/media/imagen5.webp": "/static/media/imagen5.e388afcae89a239fe31e.webp",
-    "static/media/Aboutme.png": "/static/media/Aboutme.6a16f9197cd9ae0db639.png",
-    "static/media/imagen1.webp": "/static/media/imagen1.b6ca777abf1f982acbb0.webp",
-    "static/media/imagen4.webp": "/static/media/imagen4.87764e6805aac488ef86.webp",
-    "static/media/imagen3.webp": "/static/media/imagen3.617f0785bf2ce81e6be2.webp",
+    "main.js": "/static/js/main.7c6a4abd.js",
+    "static/js/182.784b5b84.chunk.js": "/static/js/182.784b5b84.chunk.js",
+    "static/js/937.42a907a7.chunk.js": "/static/js/937.42a907a7.chunk.js",
+    "static/js/977.c3e69f22.chunk.js": "/static/js/977.c3e69f22.chunk.js",
+    "static/media/resume.pdf": "/static/media/resume.323a850052891669d31d.pdf",
+    "static/media/pokeapi.webp": "/static/media/pokeapi.c2d2d98ac4125c811db7.webp",
+    "static/media/rickandmorty.webp": "/static/media/rickandmorty.c30ce16f36282ec9cc71.webp",
+    "static/media/cinemo.webp": "/static/media/cinemo.b22e4c53ed7346170985.webp",
+    "static/media/tasksapp.webp": "/static/media/tasksapp.40c08969c870d6f81e0e.webp",
+    "static/media/globalnotes.webp": "/static/media/globalnotes.39a1b4083d2c9e64f495.webp",
+    "static/media/me.webp": "/static/media/me.76de42844cf8ff40542b.webp",
+    "static/media/pythonsqlite.webp": "/static/media/pythonsqlite.8dfd2db603c14a0a937e.webp",
+    "static/media/cibertec.webp": "/static/media/cibertec.2e893ea9b336272f625a.webp",
+    "static/media/alura.webp": "/static/media/alura.027fefda5fbe2da393ae.webp",
+    "static/media/freecodecamp.webp": "/static/media/freecodecamp.83725310a0c1c1ac9628.webp",
     "index.html": "/index.html",
-    "main.f8b84835.css.map": "/static/css/main.f8b84835.css.map",
-    "main.a3041d9b.js.map": "/static/js/main.a3041d9b.js.map",
-    "937.bc63fe91.chunk.js.map": "/static/js/937.bc63fe91.chunk.js.map"
+    "main.7c6a4abd.js.map": "/static/js/main.7c6a4abd.js.map",
+    "182.784b5b84.chunk.js.map": "/static/js/182.784b5b84.chunk.js.map",
+    "937.42a907a7.chunk.js.map": "/static/js/937.42a907a7.chunk.js.map",
+    "977.c3e69f22.chunk.js.map": "/static/js/977.c3e69f22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8b84835.css",
-    "static/js/main.a3041d9b.js"
+    "static/js/main.7c6a4abd.js"
   ]
 }
