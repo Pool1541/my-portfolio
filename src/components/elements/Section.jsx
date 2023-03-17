@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Section = styled.section`
   position: relative;
+  overflow: hidden;
   padding: 75px 0 100px;
   display: flex;
   flex-direction: column;
