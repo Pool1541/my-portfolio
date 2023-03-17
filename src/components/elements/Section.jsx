@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Section = styled.section`
   position: relative;
-  padding: 100px 0;
+  padding: 75px 0 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;

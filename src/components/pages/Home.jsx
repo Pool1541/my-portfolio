@@ -3,16 +3,20 @@ import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 import Main from "../layout/Main";
 
-const StyledContainer = styled.div`
-  /* transform: translateY(0); */
-`;
+const StyledContainer = styled.div``;
 
-export default function Home() {
+export default function Home({ isLoading }) {
   return (
-    <StyledContainer>
-      <Header />
-      <Main />
-      <Footer />
-    </StyledContainer>
+    <>
+      {isLoading ? (
+        <></>
+      ) : (
+        <StyledContainer>
+          <Header />
+          <Main />
+          <Footer />
+        </StyledContainer>
+      )}
+    </>
   );
 }

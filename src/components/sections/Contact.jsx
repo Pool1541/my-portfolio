@@ -5,6 +5,7 @@ import validateForm from "../../utils/validateForm";
 import Section from "../elements/Section";
 import StyledSubtitle from "../elements/Subtitle";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 const TitleWrapper = styled.div`
   display: flex;
@@ -135,6 +136,13 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
   const errorMessages = lang.errorMessages;
   const form = lang.contactForm;
+  useScrollReveal(
+    ["#contact-title", "#contact-title + p", "#form div", "#form button"],
+    {
+      origin: "bottom",
+      distance: "50px",
+    }
+  );
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -159,10 +167,10 @@ export default function Contact() {
   return (
     <Section id="contact">
       <TitleWrapper>
-        <StyledSubtitle>{lang.contact}</StyledSubtitle>
+        <StyledSubtitle id="contact-title">{lang.contact}</StyledSubtitle>
         <p>{lang.contactText}</p>
       </TitleWrapper>
-      <StyledForm onSubmit={handleSubmit} sent={sent}>
+      <StyledForm onSubmit={handleSubmit} sent={sent} id="form">
         <div>
           <input
             type="text"

@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url(../assets/fonts/Calibre-Light.woff2);
+    src: url('../assets/fonts/Calibre-Light.woff2') format('truetype2');
   }
   
   @font-face {
@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(../assets/fonts/Calibre-Regular.woff2);
+    src: url('../assets/fonts/Calibre-Regular.woff2') format('truetype2');
   }
 
   @font-face {
@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(../assets/fonts/Calibre-Medium.woff2);
+    src: url('../assets/fonts/Calibre-Medium.woff2') format('truetype2');
   }
 
   @font-face {
@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url(../assets/fonts/Calibre-Semibold.woff2);
+    src: url('../assets/fonts/Calibre-Semibold.woff2') format('truetype2');
   }
 
   :root {

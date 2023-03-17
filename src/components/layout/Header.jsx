@@ -1,9 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import useLang from "../../hooks/useLang";
 import useScroll from "../../hooks/useScroll";
 import BurgerBtn from "..//BurgerBtn";
-import ScrollReveal from "scrollreveal";
+import useScrollReveal from "../../hooks/useScrollReveal";
+import Logo from "../../assets/icons/Logo";
+import Language from "../elements/Language";
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -59,6 +61,8 @@ const StyledHeader = styled.header`
       }
 
       li {
+        display: flex;
+        align-items: center;
         white-space: nowrap;
         font-size: 1.2rem;
         font-weight: 500;
@@ -72,6 +76,9 @@ const StyledHeader = styled.header`
 
           &:hover > p {
             transform: translateY(-27px);
+            @media screen and (max-width: 660px) {
+              transform: translateY(-23px);
+            }
           }
         }
       }
@@ -87,7 +94,6 @@ const NavLink = styled.p`
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
   const { scroll } = useScroll();
-  const ref = useRef();
 
   const {
     lang: { navBar },
@@ -97,23 +103,18 @@ export default function Header() {
     setIsActive(!isActive);
   }
 
-  useEffect(() => {
-    ScrollReveal().reveal(ref.current.querySelectorAll("li"), {
-      duration: 1000,
-      delay: 6000,
-      distance: "50px",
-      easing: "ease-out",
-      origin: "bottom",
-      interval: 100,
-    });
-  }, []);
+  useScrollReveal(["#list li"], {
+    delay: 1000,
+    distance: "50px",
+    origin: "bottom",
+  });
 
   return (
     <StyledHeader isActive={isActive} id="header" scroll={scroll}>
       <div>
-        <div>Logo</div>
+        <Logo />
         <nav>
-          <ul ref={ref}>
+          <ul id="list">
             <li>
               <a href="#top" onClick={handleClick}>
                 <NavLink>{navBar.home}</NavLink>
@@ -137,6 +138,9 @@ export default function Header() {
                 <NavLink>{navBar.contact}</NavLink>
                 <NavLink bold>{navBar.contact}</NavLink>
               </a>
+            </li>
+            <li>
+              <Language />
             </li>
           </ul>
         </nav>

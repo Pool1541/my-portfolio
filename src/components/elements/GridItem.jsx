@@ -88,9 +88,9 @@ const StyledItem = styled.div`
 `;
 
 export default function GridItem({ data }) {
-  const { imageUrl, title, stack, demoUrl, GithubUrl } = data;
+  const { imageUrl, title, stack, demoUrl, GithubUrl, id } = data;
   return (
-    <a href={demoUrl} target="_blank" rel="noreferrer">
+    <div href={demoUrl} target="_blank" rel="noreferrer" id={id}>
       <StyledItem>
         <img src={imageUrl} alt={title} loading="lazy" />
         <a href={GithubUrl} target="_blank" rel="noreferrer" title={title}>
@@ -105,6 +105,6 @@ export default function GridItem({ data }) {
           </ul>
         </div>
       </StyledItem>
-    </a>
+    </div>
   );
 }
