@@ -1,5 +1,6 @@
 const locale = {
   en: {
+    current: "en",
     navBar: {
       home: "Home",
       about: "About me",
@@ -41,8 +42,12 @@ const locale = {
       content:
         "Thank you for reaching out to me. I will make every effort to respond to you as soon as I can.",
     },
+    lenguage: "Language",
+    spanish: "Spanish",
+    english: "English",
   },
   es: {
+    current: "es",
     navBar: {
       home: "Inicio",
       about: "Acerca de mi",
@@ -85,6 +90,9 @@ const locale = {
       content:
         "Gracias por comunicarte conmigo. Haré todo lo posible para responderte cuanto antes.",
     },
+    lenguage: "Idioma",
+    spanish: "Español",
+    english: "Inglés",
   },
 };
 

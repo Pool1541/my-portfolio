@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import useLang from "../../hooks/useLang";
+import useScrollReveal from "../../hooks/useScrollReveal";
 import Education from "../Education";
 import Section from "../elements/Section";
 import StyledContainer from "../elements/StyledContainer";
@@ -65,10 +66,14 @@ const Container = styled(StyledContainer)`
 
 export default function About() {
   const { lang } = useLang();
+  useScrollReveal(["#aboutme", "#tools", "#education"], {
+    origin: "bottom",
+    distance: "50px",
+  });
 
   return (
     <StyledSection id="about">
-      <Container>
+      <Container id="aboutme">
         <div className="imageContainer">
           <img
             src={require("../../assets/images/me.webp")}
@@ -81,8 +86,8 @@ export default function About() {
           <p>{lang.about}</p>
         </div>
       </Container>
-      <Tools />
-      <Education />
+      <Tools id="tools" />
+      <Education id="education" />
     </StyledSection>
   );
 }

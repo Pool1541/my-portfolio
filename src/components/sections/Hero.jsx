@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
 import styled from "styled-components";
 import useLang from "../../hooks/useLang";
-import ScrollReveal from "scrollreveal";
+import useScrollReveal from "../../hooks/useScrollReveal";
+import pdf from "../../static/resume.pdf";
 
 const StyledHero = styled.section`
   width: 70%;
@@ -79,31 +79,22 @@ const StyledHero = styled.section`
 
 export default function Hero() {
   const { lang } = useLang();
-  const divRef = useRef();
-
-  useEffect(() => {
-    const nodeArray = [divRef.current.childNodes];
-
-    ScrollReveal().reveal(nodeArray[0], {
-      duration: 1000,
-      delay: 6500,
-      distance: "30px",
-      opacity: 0,
-      easing: "ease-out",
-      origin: "bottom",
-      interval: 100,
-      // beforeReveal: (e) => e.classList.add("reveal"),
-    });
-  }, []);
+  useScrollReveal(["#hero p", "#hero h1", "#hero h2", "#hero h3", "#hero a"], {
+    delay: 1250,
+    distance: "30px",
+    origin: "bottom",
+  });
 
   return (
     <StyledHero id="top">
-      <div ref={divRef}>
+      <div id="hero">
         <p>{lang.greeting}</p>
         <h1>{lang.fullname}</h1>
         <h2>{lang.whatIDo}</h2>
         <h3>{lang.intro}</h3>
-        <a href="#">{lang.resume}</a>
+        <a href={pdf} target="_blank" rel="noreferrer">
+          {lang.resume}
+        </a>
       </div>
     </StyledHero>
   );

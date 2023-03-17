@@ -21,7 +21,7 @@ const Container = styled(StyledContainer)`
     }
   }
 
-  li {
+  a {
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -40,47 +40,57 @@ const Container = styled(StyledContainer)`
   }
 `;
 
-export default function Education() {
+export default function Education({ id }) {
   const { lang } = useLang();
 
   return (
-    <Container>
+    <Container id={id}>
       <h3>{lang.education.title}</h3>
       <ul className="tools">
-        <a href="https://www.cibertec.edu.pe/" target="_blank" rel="noreferrer">
-          <li title="Cibertec">
+        <li title="Cibertec">
+          <a
+            href="https://www.cibertec.edu.pe/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={require("../assets/images/cibertec.webp")}
               alt="Cibertec"
               loading="lazy"
             />
             <p>{lang.education.cibertec}</p>
-          </li>
-        </a>
-        <a href="https://www.aluracursos.com/" target="_blank" rel="noreferrer">
-          <li title="Alura latam">
+          </a>
+        </li>
+
+        <li title="Alura latam">
+          <a
+            href="https://www.aluracursos.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={require("../assets/images/alura.webp")}
               alt="Alura latam"
               loading="lazy"
             />
             <p>{lang.education.alura}</p>
-          </li>
-        </a>
-        <a
-          href="https://www.freecodecamp.org/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <li title="FreeCodeCamp">
+          </a>
+        </li>
+
+        <li title="FreeCodeCamp">
+          <a
+            href="https://www.freecodecamp.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={require("../assets/images/freecodecamp.webp")}
               alt="FreeCodeCamp"
               loading="lazy"
             />
             <p>{lang.education.freecodecamp}</p>
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
     </Container>
   );

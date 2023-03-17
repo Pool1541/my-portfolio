@@ -4,19 +4,18 @@ import { Suspense } from "react";
 import Loader from "./assets/icons/Loader";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const Home = lazy(() => import("./components/pages/Home"));
 
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      setTimeout(() => {}, 500);
-    }, 5500);
-  });
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 5000);
 
   return (
     <div className="App">
       <Loader />
       <Suspense fallback={null}>
-        <Home />
+        <Home isLoading={isLoading} />
       </Suspense>
     </div>
   );

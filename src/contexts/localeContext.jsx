@@ -7,13 +7,22 @@ export const LocaleContext = createContext();
 export default function LocaleContextProvider({ children }) {
   const [lang, setLang] = useState(locale.es);
 
-  function changeLang() {}
+  function spanish(callback) {
+    callback();
+    setLang(locale.es);
+  }
+
+  function english(callback) {
+    callback();
+    setLang(locale.en);
+  }
 
   return (
     <LocaleContext.Provider
       value={{
         lang,
-        setLang,
+        spanish,
+        english,
       }}
     >
       {children}

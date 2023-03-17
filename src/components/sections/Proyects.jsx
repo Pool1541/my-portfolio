@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import useLang from "../../hooks/useLang";
+import useScrollReveal from "../../hooks/useScrollReveal";
 import GridItem from "../elements/GridItem";
 import Section from "../elements/Section";
 import StyledSubtitle from "../elements/Subtitle";
@@ -25,6 +26,7 @@ const proyects = [
     stack: ["React", "Css modules", "Firebase"],
     demoUrl: "https://pool1541.github.io/cinemo/",
     GithubUrl: "https://github.com/Pool1541/cinemo",
+    id: "left",
   },
   {
     title: "TasksApp",
@@ -32,6 +34,7 @@ const proyects = [
     stack: ["React", "Styled-components", "Firebase"],
     demoUrl: "https://pool1541.github.io/tasks-app/",
     GithubUrl: "https://github.com/Pool1541/tasks-app",
+    id: "right",
   },
   {
     title: "Global notes",
@@ -39,6 +42,7 @@ const proyects = [
     stack: ["React", "Styled-components", "firebase"],
     demoUrl: "https://pool1541.github.io/global-notes-v2.0/",
     GithubUrl: "https://github.com/Pool1541/global-notes-v2.0",
+    id: "left",
   },
   {
     title: "Rick&Morty",
@@ -46,6 +50,7 @@ const proyects = [
     stack: ["React", "Styled-components", "fetch"],
     demoUrl: "https://pool1541.github.io/rick-and-morty-page/",
     GithubUrl: "https://github.com/Pool1541/rick-and-morty-page",
+    id: "right",
   },
   {
     title: "Pokedex",
@@ -53,6 +58,7 @@ const proyects = [
     stack: ["Javascript vanilla", "Css", "Html"],
     demoUrl: "https://pool1541.github.io/pokeapi/",
     GithubUrl: "https://github.com/Pool1541/pokeapi",
+    id: "left",
   },
   {
     title: "Python sqlite Crud",
@@ -60,17 +66,31 @@ const proyects = [
     stack: ["Python", "Tkinter", "Sqlite"],
     demoUrl: "https://github.com/Pool1541/crud-compensados",
     GithubUrl: "https://github.com/Pool1541/crud-compensados",
+    id: "right",
   },
 ];
 
 export default function Proyects() {
   const { lang } = useLang();
+
+  useScrollReveal(["#proyect-title"], {
+    origin: "bottom",
+    distance: "50px",
+  });
+  useScrollReveal(["#left"], {
+    origin: "left",
+    distance: "50px",
+  });
+  useScrollReveal(["#right"], {
+    origin: "right",
+    distance: "50px",
+  });
   return (
     <Section id="proyects">
-      <StyledSubtitle>{lang.proyects}</StyledSubtitle>
+      <StyledSubtitle id="proyect-title">{lang.proyects}</StyledSubtitle>
       <StyledGrid>
         {proyects.map((proyect, index) => (
-          <GridItem data={proyect} key={index} />
+          <GridItem data={proyect} key={index} id={proyect.id} />
         ))}
       </StyledGrid>
     </Section>

@@ -35,10 +35,10 @@ const Container = styled(StyledContainer)`
   }
 `;
 
-export default function Tools() {
+export default function Tools({ id }) {
   const { lang } = useLang();
   return (
-    <Container>
+    <Container id={id}>
       <h3>{lang.tools}</h3>
       <ul className="tools">
         <li title="Javascript">
