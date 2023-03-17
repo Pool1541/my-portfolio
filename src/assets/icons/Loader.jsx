@@ -1,5 +1,5 @@
 import anime from "animejs";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { useEffect } from "react";
 import styled from "styled-components";
 
