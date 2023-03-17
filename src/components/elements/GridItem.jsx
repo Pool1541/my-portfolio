@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { AiFillGithub } from "react-icons/ai";
-import { useRef } from "react";
 
 const StyledItem = styled.div`
   min-height: 200px;
