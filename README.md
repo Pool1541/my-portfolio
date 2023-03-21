@@ -9,6 +9,8 @@
 <a href="https://pool-llerena.xyz/" target="_blank" rel="noopener noreferrer">See deployment on GitHub Pages here 🚀</a>
 <br>
 
+---
+
 ## Getting Started
 
 ### Prerequisites 📋
@@ -116,7 +118,7 @@ To modify the icons of 'languages and tools', you have to upload the icons to th
   </Container>
 ```
 
-### where i studied 📖
+### Where i studied 📖
 
 Likewise, you can modify the <b>where I studied</b> section by adding icons or images to `/src/assets/images` and adding/removing blocks with your information in `src/components/Education.jsx`.
 
@@ -332,6 +334,8 @@ Save your changes, make the commit, push to your main branch, and then run the c
   $ npm run deploy
 ```
 
+---
+
 ## Colors 🎨
 
 | Color             | Hex                                                                |
@@ -365,6 +369,8 @@ Save your changes, make the commit, push to your main branch, and then run the c
 ## Credits 📄
 
 This project was inspired by the work of [Brittany Chiang](https://github.com/bchiang7) on the [V4 website](https://brittanychiang.com/).
+
+---
 
 ## License ⚖️
 
