@@ -46,7 +46,7 @@ export default function Education({ id }) {
   return (
     <Container id={id}>
       <h3>{lang.education.title}</h3>
-      <ul className="tools">
+      <ul>
         <li title="Cibertec">
           <a
             href="https://www.cibertec.edu.pe/"

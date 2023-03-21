@@ -1,7 +1,7 @@
 import { lazy, useState } from "react";
 import { Suspense } from "react";
 
-import Loader from "./assets/icons/Loader";
+import Loader from "./components/Loader";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

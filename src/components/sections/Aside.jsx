@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
-import { useEffect, useRef } from "react";
-import ScrollReveal from "scrollreveal";
 import useScrollReveal from "../../hooks/useScrollReveal";
 
 const StyledAside = styled.aside`
