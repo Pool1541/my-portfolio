@@ -58,7 +58,7 @@ Also change the favicon, logos, and change the information in the manifest.json 
 
 In `/src/locale/locale.js` You have to customize the template with your information.
 The locale object has two lenguages, english(en) and spanish(es).
-Modify the value of each key whit your information
+Modify the value of each key with your information
 
 ```javascript
   const locale = {
