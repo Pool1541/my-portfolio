@@ -362,6 +362,10 @@ Save your changes, make the commit, push to your main branch, and then run the c
 
 ---
 
-## License 📄
+## Credits 📄
+
+This project was inspired by the work of [Brittany Chiang](https://github.com/bchiang7) on the [V4 website](https://github.com/johndoe/awesomeapp).
+
+## License ⚖️
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
