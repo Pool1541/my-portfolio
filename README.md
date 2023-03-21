@@ -364,7 +364,7 @@ Save your changes, make the commit, push to your main branch, and then run the c
 
 ## Credits 📄
 
-This project was inspired by the work of [Brittany Chiang](https://github.com/bchiang7) on the [V4 website](https://github.com/johndoe/awesomeapp).
+This project was inspired by the work of [Brittany Chiang](https://github.com/bchiang7) on the [V4 website](https://brittanychiang.com/).
 
 ## License ⚖️
 
