@@ -88,6 +88,8 @@ in `/src/styles/globalStyles.css` you can customize the global styles of the tem
 
 ### About me 🧑
 
+Change the image `me.webp` in `./src/assets/images/` to a photo of you with the same filename and extension (`.webp`).
+
 To modify the icons of 'languages and tools', you have to upload the icons to the `/src/assets/icons` folder and add the component in `/src/components/Tools.jsx`.
 
 ```javascript
@@ -366,9 +368,19 @@ Save your changes, make the commit, push to your main branch, and then run the c
 
 ---
 
+## Contributing 🤝
+
+Contributions are welcome! Here are some ways you can contribute:
+
+- Submit bugs and feature requests by opening an issue.
+- Improve the documentation by opening a pull request.
+- Add a new feature or fix a bug by opening a pull request.
+
+---
+
 ## Credits 📄
 
-This project was inspired by the work of [Brittany Chiang](https://github.com/bchiang7) on the [V4 website](https://brittanychiang.com/).
+This project was inspired by the work of [Brittany Chiang](https://github.com/bchiang7) on her [V4 website](https://brittanychiang.com/).
 
 ---
 
