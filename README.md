@@ -66,14 +66,14 @@ Modify the value of each key with your information
   const locale = {
     en : {
       current: 'en',
-      ...
+      ...,
       fullname: 'your name',
       whatIDo: '...',
       ...
     }
     es : {
       current: 'en',
-      ...
+      ...,
       fullname: 'Tu nombre',
       whatIDo: '...',
       ...
@@ -146,7 +146,7 @@ Like this :
 ```javascript
   const locale = {
     en : {
-      ...
+      ...,
       education: {
       title: "Where i studied",
       myUniversityName: "MyUniversityName : 2015 - 2020",
@@ -154,7 +154,7 @@ Like this :
     },
     }
     es : {
-      ...
+      ...,
       education: {
       title: "Donde estudié",
       myUniversityName: "MyUniversityName : 2015 - 2020",
