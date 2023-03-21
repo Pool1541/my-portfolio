@@ -53,7 +53,8 @@ You can fork this project by following these steps:
 Go to `/public/index.html` and put your information in title and meta-description tags
 
 ```html
-<title>title</title> <meta name="description" content="your description" />
+<title>title</title>
+<meta name="description" content="your description" />
 ```
 
 Also change the favicon, logos, and change the information in the manifest.json file. <br><br><br>
@@ -70,9 +71,9 @@ Modify the value of each key with your information
       fullname: 'your name',
       whatIDo: '...',
       ...
-    }
+    },
     es : {
-      current: 'en',
+      current: 'es',
       ...,
       fullname: 'Tu nombre',
       whatIDo: '...',
@@ -152,17 +153,17 @@ Like this :
       education: {
       title: "Where i studied",
       myUniversityName: "MyUniversityName : 2015 - 2020",
-      myUniversiTyName2: "MyUniversityName2 : 2020 - today"
+      myUniversiTyName2: "MyUniversityName2 : 2020 - today",
+      },
     },
-    }
     es : {
       ...,
       education: {
       title: "Donde estudié",
       myUniversityName: "MyUniversityName : 2015 - 2020",
-      myUniversiTyName2: "MyUniversityName2 : 2020 - actualidad"
-    }
-  }
+      myUniversiTyName2: "MyUniversityName2 : 2020 - actualidad",
+      },
+    },
   }
 ```
 
