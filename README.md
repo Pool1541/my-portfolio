@@ -269,7 +269,7 @@ Remember to do the same to customize the header logo, but decrease the font size
 
 ### Footer ❗
 
-Personaliza el footer con tu información y redes sociales en el archivo `/src/components/layout/Footer.jsx`
+Customize the footer with your information and social media on the file `/src/components/layout/Footer.jsx`
 
 ```javascript
   import { FiGithub } from 'react-icons/fi'
