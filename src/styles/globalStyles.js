@@ -83,8 +83,12 @@ const GlobalStyle = createGlobalStyle`
   li::selection,
   label::selection,
   img::selection {
-    background-color: rgb(195, 240, 225);
-    color: rgb(63, 185, 185);
+    background-color: rgb(123 204 215 / 33%);
+    color: rgb(125 170 203);
+  }
+
+  img {
+    pointer-events: none;
   }
 
   button {
