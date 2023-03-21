@@ -135,24 +135,6 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 0px;
     }
 
-
-
-
-/* 
-  .scroll {
-
-    &::-webkit-scrollbar-track {
-      background-color: var(--oxford-blue);
-    }
-
-    &::-webkit-scrollbar-thumb {
-    background-color: var(--oxford-blue);
-    border: 2px solid #ffffff6e;
-  }
-
-  } */
-
-
 `;
 
 export default GlobalStyle;
