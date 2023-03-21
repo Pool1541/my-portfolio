@@ -1,6 +1,6 @@
 # Portfolio
 
-![App Screenshot](https://github.com/Pool1541/react-portfolio/blob/master/src/assets/images/screnshot.png)
+![App Screenshot](https://github.com/Pool1541/react-portfolio/blob/master/src/assets/images/screenshot.png)
 
 ---
 
