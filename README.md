@@ -361,3 +361,7 @@ Save your changes, make the commit, push to your main branch, and then run the c
 <a href="https://formsubmit.co/" target="_blank" rel="noopener noreferrer">Formsubmit</a><br>
 
 ---
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
