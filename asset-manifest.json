@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.6d6fe1ed.js",
-    "static/js/182.f01bcd72.chunk.js": "/static/js/182.f01bcd72.chunk.js",
+    "main.js": "/static/js/main.5ac1c05a.js",
+    "static/js/182.d76c170a.chunk.js": "/static/js/182.d76c170a.chunk.js",
     "static/js/937.42a907a7.chunk.js": "/static/js/937.42a907a7.chunk.js",
     "static/js/977.c3e69f22.chunk.js": "/static/js/977.c3e69f22.chunk.js",
+    "static/media/resume.pdf": "/static/media/resume.3ec9dfc30ba79a19c361.pdf",
     "static/media/screenshot.png": "/static/media/screenshot.dc5dc7ea054badc45102.png",
-    "static/media/resume.pdf": "/static/media/resume.323a850052891669d31d.pdf",
     "static/media/pokeapi.webp": "/static/media/pokeapi.c2d2d98ac4125c811db7.webp",
     "static/media/rickandmorty.webp": "/static/media/rickandmorty.c30ce16f36282ec9cc71.webp",
     "static/media/cinemo.webp": "/static/media/cinemo.b22e4c53ed7346170985.webp",
@@ -17,12 +17,12 @@
     "static/media/alura.webp": "/static/media/alura.027fefda5fbe2da393ae.webp",
     "static/media/freecodecamp.webp": "/static/media/freecodecamp.83725310a0c1c1ac9628.webp",
     "index.html": "/index.html",
-    "main.6d6fe1ed.js.map": "/static/js/main.6d6fe1ed.js.map",
-    "182.f01bcd72.chunk.js.map": "/static/js/182.f01bcd72.chunk.js.map",
+    "main.5ac1c05a.js.map": "/static/js/main.5ac1c05a.js.map",
+    "182.d76c170a.chunk.js.map": "/static/js/182.d76c170a.chunk.js.map",
     "937.42a907a7.chunk.js.map": "/static/js/937.42a907a7.chunk.js.map",
     "977.c3e69f22.chunk.js.map": "/static/js/977.c3e69f22.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6d6fe1ed.js"
+    "static/js/main.5ac1c05a.js"
   ]
 }
