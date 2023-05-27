@@ -5,7 +5,7 @@ import locale from "../locale/locale";
 export const LocaleContext = createContext();
 
 export default function LocaleContextProvider({ children }) {
-  const [lang, setLang] = useState(locale.es);
+  const [lang, setLang] = useState(locale.en);
 
   function spanish(callback) {
     callback();
@@ -23,8 +23,7 @@ export default function LocaleContextProvider({ children }) {
         lang,
         spanish,
         english,
-      }}
-    >
+      }}>
       {children}
     </LocaleContext.Provider>
   );
