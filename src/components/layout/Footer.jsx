@@ -62,7 +62,7 @@ export default function Footer() {
     <StyledFooter>
       <p>
         © Copyright 2023. Made by{" "}
-        <a href="https://www.pool-llerena.xyz" title="Pool Llerena">
+        <a href="https://pool-llerena.netlify.app/" title="Pool Llerena">
           Pool Llerena
         </a>
       </p>
@@ -72,8 +72,7 @@ export default function Footer() {
             href="https://github.com/Pool1541"
             title="Github"
             target="_blank"
-            rel="noreferrer"
-          >
+            rel="noreferrer">
             <FiGithub />
           </a>
         </li>
@@ -82,8 +81,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/pool-llerena/"
             title="Linkedin"
             target="_blank"
-            rel="noreferrer"
-          >
+            rel="noreferrer">
             <FiLinkedin />
           </a>
         </li>
@@ -92,8 +90,7 @@ export default function Footer() {
             href="https://www.instagram.com/aaryh_/"
             title="Instagram"
             target="_blank"
-            rel="noreferrer"
-          >
+            rel="noreferrer">
             <FiInstagram />
           </a>
         </li>
