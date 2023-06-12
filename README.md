@@ -6,7 +6,7 @@
 
 ## Demo
 
-<a href="https://pool-llerena.xyz/" target="_blank" rel="noopener noreferrer">See deployment on GitHub Pages here 🚀</a>
+<a href="https://pool-llerena.netlify.app/" target="_blank" rel="noopener noreferrer">See deployment on Netlify here 🚀</a>
 <br>
 
 ---
@@ -53,8 +53,7 @@ You can fork this project by following these steps:
 Go to `/public/index.html` and put your information in title and meta-description tags
 
 ```html
-<title>title</title>
-<meta name="description" content="your description" />
+<title>title</title> <meta name="description" content="your description" />
 ```
 
 Also change the favicon, logos, and change the information in the manifest.json file. <br><br><br>
@@ -207,8 +206,7 @@ import { MySocialMediaIcon } from "react-icons/fi";
       href="https://www.linkToMySocialMedia.com"
       title="MySocialMediaName"
       target="_blank"
-      rel="noreferrer"
-    >
+      rel="noreferrer">
       <FiMySocialMediaIcon /> //you can use icons from react-icons
     </a>
   </li>
