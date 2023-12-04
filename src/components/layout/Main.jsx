@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import Hero from "../sections/Hero";
-import ParticlesJS from "../ParticlesJS";
-import About from "../sections/About";
-import Proyects from "../sections/Proyects";
-import Contact from "../sections/Contact";
-import Aside from "../sections/Aside";
+import styled from 'styled-components';
+import Hero from '../sections/Hero';
+import ParticlesJS from '../ParticlesJS';
+import About from '../sections/About';
+import Projects from '../sections/Projects';
+import Contact from '../sections/Contact';
+import Aside from '../sections/Aside';
 
 const StyledMain = styled.main`
   width: 100%;
@@ -20,7 +20,7 @@ export default function Main() {
       <ParticlesJS />
       <Hero />
       <About />
-      <Proyects />
+      <Projects />
       <Contact />
       <Aside />
     </StyledMain>

@@ -1,11 +1,11 @@
-import { useState } from "react";
-import styled from "styled-components";
-import useLang from "../../hooks/useLang";
-import useScroll from "../../hooks/useScroll";
-import BurgerBtn from "..//BurgerBtn";
-import useScrollReveal from "../../hooks/useScrollReveal";
-import Logo from "../../assets/icons/Logo";
-import Language from "../elements/Language";
+import { useState } from 'react';
+import styled from 'styled-components';
+import useLang from '../../hooks/useLang';
+import useScroll from '../../hooks/useScroll';
+import BurgerBtn from '..//BurgerBtn';
+import useScrollReveal from '../../hooks/useScrollReveal';
+import Logo from '../../assets/icons/Logo';
+import Language from '../elements/Language';
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -15,8 +15,7 @@ const StyledHeader = styled.header`
   top: 0;
   backdrop-filter: blur(5px);
   background-color: #0a192fc1;
-  box-shadow: ${({ scroll }) =>
-    scroll !== 0 ? "0 1px 5px 1px #000000a8" : "none"};
+  box-shadow: ${({ scroll }) => (scroll !== 0 ? '0 1px 5px 1px #000000a8' : 'none')};
   padding: 0 40px;
   transition: all 0.3s ease;
 
@@ -51,8 +50,7 @@ const StyledHeader = styled.header`
         padding: 40px 20px;
         background-color: var(--oxford-blue);
         transition: transform 0.3s ease-in-out;
-        transform: ${({ isActive }) =>
-          isActive ? "translateX(0)" : "translateX(100vw)"};
+        transform: ${({ isActive }) => (isActive ? 'translateX(0)' : 'translateX(100vw)')};
 
         p {
           font-size: 1.2rem;
@@ -87,7 +85,7 @@ const StyledHeader = styled.header`
 `;
 
 const NavLink = styled.p`
-  font-weight: ${({ bold }) => (bold ? "600" : "400")};
+  font-weight: ${({ bold }) => (bold ? '600' : '400')};
   transition: transform 0.3s ease;
 `;
 
@@ -103,38 +101,38 @@ export default function Header() {
     setIsActive(!isActive);
   }
 
-  useScrollReveal(["#list li"], {
+  useScrollReveal(['#list li'], {
     delay: 1000,
-    distance: "50px",
-    origin: "bottom",
+    distance: '50px',
+    origin: 'bottom',
   });
 
   return (
-    <StyledHeader isActive={isActive} id="header" scroll={scroll}>
+    <StyledHeader isActive={isActive} id='header' scroll={scroll}>
       <div>
         <Logo />
         <nav>
-          <ul id="list">
+          <ul id='list'>
             <li>
-              <a href="#top" onClick={handleClick}>
+              <a href='#top' onClick={handleClick}>
                 <NavLink>{navBar.home}</NavLink>
                 <NavLink bold>{navBar.home}</NavLink>
               </a>
             </li>
             <li>
-              <a href="#about" onClick={handleClick}>
+              <a href='#about' onClick={handleClick}>
                 <NavLink>{navBar.about}</NavLink>
                 <NavLink bold>{navBar.about}</NavLink>
               </a>
             </li>
             <li>
-              <a href="#proyects" onClick={handleClick}>
-                <NavLink>{navBar.proyects}</NavLink>
-                <NavLink bold>{navBar.proyects}</NavLink>
+              <a href='#projects' onClick={handleClick}>
+                <NavLink>{navBar.projects}</NavLink>
+                <NavLink bold>{navBar.projects}</NavLink>
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={handleClick}>
+              <a href='#contact' onClick={handleClick}>
                 <NavLink>{navBar.contact}</NavLink>
                 <NavLink bold>{navBar.contact}</NavLink>
               </a>

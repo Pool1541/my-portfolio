@@ -128,12 +128,12 @@ Likewise, you can modify the <b>where I studied</b> section by adding icons or i
 <Container id={id}>
   <h3>{lang.education.title}</h3>
   <ul>
-    <li title="NameOfMyUniversity">
-      <a href="https://www.my-university.com/" target="_blank" rel="noreferrer">
+    <li title='NameOfMyUniversity'>
+      <a href='https://www.my-university.com/' target='_blank' rel='noreferrer'>
         <img
-          src={require("../assets/images/ImageOfMyUniversity.webp")}
-          alt="MyUniversity"
-          loading="lazy"
+          src={require('../assets/images/ImageOfMyUniversity.webp')}
+          alt='MyUniversity'
+          loading='lazy'
         />
         <p>{lang.education.myUniversity}</p>
       </a>
@@ -166,13 +166,13 @@ Like this :
   }
 ```
 
-### Proyects ⚒️
+### Projects ⚒️
 
-Go to `/src/components/sections/Proyects.jsx` and add objects with information about your projects inside the <b>proyects</b> array.<br>
+Go to `/src/components/sections/Projects.jsx` and add objects with information about your projects inside the <b>projects</b> array.<br>
 Note: Remember to also add an image with a preview of your project in `/src/assets/images`.
 
 ```javascript
-const proyects = [
+const projects = [
   {
     title: "MyProyect",
     imageUrl: require("../../assets/images/myCustomImage.webp"),
@@ -198,15 +198,15 @@ You just have to replace the file `resume.pdf` with your resume in `/src/static/
 Go to `/src/components/sections/Aside.jsx` and modify the items in the unordered list in the Aside component to add/remove/change the icons with your social media profiles.
 
 ```javascript
-import { MySocialMediaIcon } from "react-icons/fi";
+import { MySocialMediaIcon } from 'react-icons/fi';
 
 <ul>
   <li>
     <a
-      href="https://www.linkToMySocialMedia.com"
-      title="MySocialMediaName"
-      target="_blank"
-      rel="noreferrer">
+      href='https://www.linkToMySocialMedia.com'
+      title='MySocialMediaName'
+      target='_blank'
+      rel='noreferrer'>
       <FiMySocialMediaIcon /> //you can use icons from react-icons
     </a>
   </li>
